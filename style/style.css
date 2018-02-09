@@ -1,0 +1,39 @@
+.input-form {
+  display: flex;
+  justify-content: center;
+}
+.input-form input{
+  width:50%;
+  padding: 10px;
+  border:2px solid #B9B9B9;
+  border-radius: 10px;
+}
+.input-form button{
+  background-color: #B9B9B9;
+  color: white;
+  margin-left: 5px;
+  border:2px solid #B9B9B9;
+  border-radius: 10px;
+}
+
+.tasks-table {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 15px;
+  background-color: white;
+  border:2px solid #B9B9B9;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.tasks-table thead {
+  display: table-header-group;
+  line-height: 12px;
+}
+.tasks-table th, td {
+  padding: 10px;
+  padding-left: 40px;
+  vertical-align: top;
+  border-top: 2px solid #B9B9B9;
+  text-align: left;
+}
