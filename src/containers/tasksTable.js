@@ -6,8 +6,8 @@ class TasksTable extends Component {
   {
     return(
       <tr>
-        <td></td>
-        <td>{task}</td>
+        <td>{task.type}</td>
+        <td>{task.term}</td>
         <td></td>
       </tr>
     )
