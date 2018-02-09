@@ -1,17 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+import Task from './task'
+
 class TasksTable extends Component {
-  renderTasks(task)
-  {
-    return(
-      <tr>
-        <td>{task.type}</td>
-        <td>{task.term}</td>
-        <td></td>
-      </tr>
-    )
-  }
   render(){
     return(
       <table className="tasks-table">
@@ -23,7 +15,7 @@ class TasksTable extends Component {
         </tr>
         </thead>
         <tbody>
-          {this.props.tasks.map(this.renderTasks)}
+          {this.props.tasks.map((task) => <Task task={task}/>)}
         </tbody>
       </table>
     )

@@ -36,7 +36,7 @@ class InputBar extends Component {
   render() {
     return (
       <form onSubmit={this.onFormSubmit} className="input-form">
-        <SelectType onSelectChange={this.onSelectChange} />
+        <SelectType onSelectChange={this.onSelectChange} value={this.state.type} />
         <input
           placeholder= "Add Task"
           value = {this.state.term}

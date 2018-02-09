@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import InputBarReducer from './inputBarReducer';
+import tasksReducer from './tasksReducer';
 
 const rootReducer = combineReducers({
-  tasks: InputBarReducer
+  tasks: tasksReducer
 })
 
 export default rootReducer;
